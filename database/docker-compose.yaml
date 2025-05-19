@@ -1,0 +1,16 @@
+
+services:
+ telegram_spring:
+    image: postgres
+    container_name: telegram_spring_cont
+    ports:
+      - "1313:5432"
+    environment:
+      - POSTGRES_USER=telegram_spring
+      - POSTGRES_PASSWORD=telegram_spring123
+      - POSTGRES_DB=telegram_db
+    volumes:
+      - telegram_vol:/var/lib/postgresql/data
+volumes:
+ telegram_vol:
+    driver: local
