@@ -31,8 +31,6 @@ public class TelegramMessageEntity {
 
     private LocalDateTime timestamp;
 
-//    private Integer date;
-
     private Long userId;
 
     private Long messageId;
